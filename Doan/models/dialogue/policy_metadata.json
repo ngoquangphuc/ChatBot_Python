@@ -1,0 +1,100 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_diem_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_chuong_trinh_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_co_hoi_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_get_thanks": {
+      "slots": []
+    },
+    "get_mo_ta_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_chi_tieu_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_ma_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "get_to_hop_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_get_hoc_bong": {
+      "slots": []
+    },
+    "utter_get_luu_hs": {
+      "slots": []
+    },
+    "utter_get_hinh_thuc": {
+      "slots": []
+    },
+    "utter_get_tuyen_thang": {
+      "slots": []
+    },
+    "utter_get_ty_le": {
+      "slots": []
+    },
+    "utter_get_hoc_phi": {
+      "slots": []
+    },
+    "get_tin_chi_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_get_song_song": {
+      "slots": []
+    },
+    "get_khoa_action": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_get_lien_he": {
+      "slots": []
+    },
+    "utter_get_lien_ket_qte": {
+      "slots": []
+    },
+    "utter_get_dau_ra": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.11.1",
+  "python": "3.6.3",
+  "max_histories": [
+    null,
+    2,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
+}

@@ -1,0 +1,916 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Xin chao",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Em muon biet thong tin ve mot so nganh dang ky tuyen sinh",
+        "intent": "get_mo_ta",
+        "entities": []
+      },
+      {
+        "text": "Cho em biet thong tin cua mot so nganh ma nha truong tuyen sinh nam 2019",
+        "intent": "get_mo_ta",
+        "entities": []
+      },
+      {
+        "text": "Thong tin tuyen sinh nam 2019 cua nha truong",
+        "intent": "get_mo_ta",
+        "entities": []
+      },
+      {
+        "text": "Thong tin tuyen sinh nam 2019 nganh Khoa hoc may tinh",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 36,
+            "end": 53,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Khoa hoc may tinh a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 23,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Luat a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Marketing",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Marketing",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Cong nghe thong tin a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Cong nghe thong tin",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Ke toan a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Khoa hoc may tinh thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 23,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Cong nghe thong tin thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Luat thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Marketing thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "Marketing",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Ke toan thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Kinh te nong nghiep thuoc khoa nao a",
+        "intent": "get_khoa",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "Kinh te nong nghiep",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Em cam on",
+        "intent": "get_thanks",
+        "entities": []
+      },
+      {
+        "text": "Chi tieu nganh Khoa hoc may tinh nam 2019 la bao nhieu a",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 15,
+            "end": 32,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu nganh Luat nam 2019",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu tuyen sinh nganh Ke toan nam 2019",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu nganh Bao hiem nam 2019",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "Bao hiem",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu tuyen sinh nganh Bat dong san la bao nhieu",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 26,
+            "end": 38,
+            "value": "Bat dong san",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "So luong chi tieu nganh Cong nghe thong tin nam nay la bao nhieu",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 24,
+            "end": 43,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Cam on",
+        "intent": "get_thanks",
+        "entities": []
+      },
+      {
+        "text": "To hop xet tuyen nganh Khoa hoc may tinh la gi",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Ke toan xet tuyen nhung to hop nao",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "To hop xet tuyen cua nganh Luat",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "To hop xet tuyen cua nganh Cong nghe thong tin",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 27,
+            "end": 46,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Dau tu tai chinh xet tuyen to hop nao",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 6,
+            "end": 22,
+            "value": "Dau tu tai chinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chuong trinh dao tao dinh huong ung dung xet tuyen to hop nao",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 0,
+            "end": 40,
+            "value": "Chuong trinh dao tao dinh huong ung dung",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Toan kinh te xet tuyen to hop nao",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "Toan kinh te",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Diem chuan nganh Khoa hoc may tinh cac nam truoc",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 17,
+            "end": 34,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Diem chuan nganh Luat 2018",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Diem chuan nganh Cong nghe thong tin cac nam truoc",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 17,
+            "end": 36,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Dien chuan cua nganh Ke toan cac nam truoc",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Dien chuan cua nganh He thong thong tin quan ly cac nam truoc",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 21,
+            "end": 47,
+            "value": "He thong thong tin quan ly",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Dien chuan cua nganh Kinh te quoc te cac nam truoc",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 21,
+            "end": 36,
+            "value": "Kinh te quoc te",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Khoa hoc may tinh la bao nhieu",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 49,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Ke toan la bao nhieu",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Luat la bao nhieu",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Kinh doanh quoc te la bao nhieu",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 50,
+            "value": "Kinh doanh quoc te",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Thuong mai dien tu",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 50,
+            "value": "Thuong mai dien tu",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Tong so luong tin chi cua nganh Kinh doanh thuong mai",
+        "intent": "get_tin_chi",
+        "entities": [
+          {
+            "start": 32,
+            "end": 53,
+            "value": "Kinh doanh thuong mai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Khoa hoc may tinh",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 54,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Ke toan",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Luat",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 41,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Quan tri khach san",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 55,
+            "value": "Quan tri khach san",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Quan tri kinh doanh",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 56,
+            "value": "Quan tri kinh doanh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Khung chuong trinh dao tao cua nganh Tai chinh ngan hang",
+        "intent": "get_chuong_trinh",
+        "entities": [
+          {
+            "start": 37,
+            "end": 56,
+            "value": "Tai chinh ngan hang",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Khoa hoc may tinh",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 54,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Luat",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 41,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Ke toan",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Quan tri nhan luc",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 54,
+            "value": "Quan tri nhan luc",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Kinh te",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "Kinh te",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Luat kinh te",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Luat kinh te",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Kinh te phat trien",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "Kinh te phat trien",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Diem chuan cua nganh Quan he cong chung cac nam",
+        "intent": "get_diem",
+        "entities": [
+          {
+            "start": 21,
+            "end": 39,
+            "value": "Quan he cong chung",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Co hoi nghe nghiep cua cu nhan nganh Ngon ngu Anh",
+        "intent": "get_co_hoi",
+        "entities": [
+          {
+            "start": 37,
+            "end": 49,
+            "value": "Ngon ngu Anh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu tuyen sinh cua nganh Dau tu tai chinh",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 30,
+            "end": 46,
+            "value": "Dau tu tai chinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chi tieu tuyen sinh nam 2019 nganh Quan ly cong",
+        "intent": "get_chi_tieu",
+        "entities": [
+          {
+            "start": 35,
+            "end": 47,
+            "value": "Quan ly cong",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "To hop xet tuyen nganh Dinh phi bao hiem va quan tri rui ro",
+        "intent": "get_to_hop",
+        "entities": [
+          {
+            "start": 23,
+            "end": 59,
+            "value": "Dinh phi bao hiem va quan tri rui ro",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Em co the gui thac mac tu van tuyen sinh o dau a",
+        "intent": "get_lien_he",
+        "entities": []
+      },
+      {
+        "text": "Nha truong co Website ho tro tu van tuyen sinh khong a",
+        "intent": "get_lien_he",
+        "entities": []
+      },
+      {
+        "text": "Cac hinh thuc tuyen sinh dai hoc cua nha truong nam 2019",
+        "intent": "get_hinh_thuc",
+        "entities": []
+      },
+      {
+        "text": "Phuong thuc xet tuyen 2019",
+        "intent": "get_hinh_thuc",
+        "entities": []
+      },
+      {
+        "text": "Doi tuong thuoc phuong thuc xet tuyen ket hop",
+        "intent": "get_tuyen_thang",
+        "entities": []
+      },
+      {
+        "text": "Doi tuong thuoc phuong thuc xet tuyen ket hop nam 2019",
+        "intent": "get_tuyen_thang",
+        "entities": []
+      },
+      {
+        "text": "Cac chuong trinh lien ket quoc te là gì a",
+        "intent": "get_lien_ket_qte",
+        "entities": []
+      },
+      {
+        "text": "Cac chuong trinh lien ket quoc te cua nha truong",
+        "intent": "get_lien_ket_qte",
+        "entities": []
+      },
+      {
+        "text": "Nha truong co duoc theo hoc hai chuong trinh cung luc khong a",
+        "intent": "get_song_song",
+        "entities": []
+      },
+      {
+        "text": "Co duoc hoc cung luc hai chuong trinh khong a",
+        "intent": "get_song_song",
+        "entities": []
+      },
+      {
+        "text": "Chuan dau ra cua nha truong yeu cau gi a",
+        "intent": "get_dau_ra",
+        "entities": []
+      },
+      {
+        "text": "Yeu cau chuan dau ra cua nha truong la gi",
+        "intent": "get_dau_ra",
+        "entities": []
+      },
+      {
+        "text": "Quy hoc bong cua nha truong nhu the nao",
+        "intent": "get_hoc_bong",
+        "entities": []
+      },
+      {
+        "text": "Hoc bong khuyen khich hoc tap cua nha truong nhu the nao a",
+        "intent": "get_hoc_bong",
+        "entities": []
+      },
+      {
+        "text": "Ty le sinh vien co viec lam sau khi ra truong",
+        "intent": "get_ty_le",
+        "entities": []
+      },
+      {
+        "text": "Sinh vien ra truong co viec lam ngay khong a",
+        "intent": "get_ty_le",
+        "entities": []
+      },
+      {
+        "text": "Nha truong dao tao luu hoc sinh khong a",
+        "intent": "get_luu_hs",
+        "entities": []
+      },
+      {
+        "text": "Chuong trinh dao tao luu hoc sinh cua nha truong",
+        "intent": "get_luu_hs",
+        "entities": []
+      },
+      {
+        "text": "Hoc phi cua nha truong nam 2019 la bao nhieu",
+        "intent": "get_hoc_phi",
+        "entities": []
+      },
+      {
+        "text": "Hoc phi cua nha truong nam 2019",
+        "intent": "get_hoc_phi",
+        "entities": []
+      },
+      {
+        "text": "Chao",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Chao bot",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Ma tuyen sinh chuyen nganh Khoa hoc may tinh la gi",
+        "intent": "get_ma",
+        "entities": [
+          {
+            "start": 27,
+            "end": 44,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Ma tuyen sinh chuyen nganh Luat",
+        "intent": "get_ma",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "Luat",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Ma tuyen sinh chuyen nganh Ke toan",
+        "intent": "get_ma",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "Ke toan",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Ma tuyen sinh chuyen nganh Kinh te nong nghiep",
+        "intent": "get_ma",
+        "entities": [
+          {
+            "start": 27,
+            "end": 46,
+            "value": "Kinh te nong nghiep",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Ma tuyen sinh chuyen nganh Cong nghe thong tin",
+        "intent": "get_ma",
+        "entities": [
+          {
+            "start": 27,
+            "end": 46,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Khoa hoc may tinh truong minh dao tao nhu the nao a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 23,
+            "value": "Khoa hoc may tinh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Luat truong minh dao tao nhu the nao a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "Luat ",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Nganh Cong nghe thong tin truong minh dao tao nhu the nao a",
+        "intent": "get_mo_ta",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "Cong nghe thong tin",
+            "entity": "location"
+          }
+        ]
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

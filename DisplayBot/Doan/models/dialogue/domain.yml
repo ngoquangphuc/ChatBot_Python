@@ -1,0 +1,145 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_get_mo_ta
+- utter_get_lien_he
+- utter_get_hinh_thuc
+- utter_get_tuyen_thang
+- utter_get_lien_ket_qte
+- utter_get_song_song
+- utter_get_dau_ra
+- utter_get_hoc_bong
+- utter_get_ty_le
+- utter_get_luu_hs
+- utter_get_hoc_phi
+- get_mo_ta_action
+- get_khoa_action
+- get_ma_action
+- get_chi_tieu_action
+- get_to_hop_action
+- get_diem_action
+- get_tin_chi_action
+- get_chuong_trinh_action
+- get_co_hoi_action
+- utter_get_thanks
+config:
+  store_entities_as_slots: true
+entities:
+- location
+intents:
+- greeting:
+    use_entities: true
+- get_mo_ta:
+    use_entities: true
+- get_khoa:
+    use_entities: true
+- get_ma:
+    use_entities: true
+- get_chi_tieu:
+    use_entities: true
+- get_to_hop:
+    use_entities: true
+- get_diem:
+    use_entities: true
+- get_tin_chi:
+    use_entities: true
+- get_chuong_trinh:
+    use_entities: true
+- get_co_hoi:
+    use_entities: true
+- get_lien_he:
+    use_entities: true
+- get_hinh_thuc:
+    use_entities: true
+- get_tuyen_thang:
+    use_entities: true
+- get_lien_ket_qte:
+    use_entities: true
+- get_song_song:
+    use_entities: true
+- get_dau_ra:
+    use_entities: true
+- get_hoc_bong:
+    use_entities: true
+- get_ty_le:
+    use_entities: true
+- get_luu_hs:
+    use_entities: true
+- get_hoc_phi:
+    use_entities: true
+- get_thanks:
+    use_entities: true
+slots:
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_get_dau_ra:
+  - text: 'Sinh vien tot nghiep can dat chuan dau ra ngoai ngu gom: dat IELTS 6.5
+      doi voi sinh vien nganh ngon ngu Anh va cac chuong trinh tien tien, B-BAE, BA,
+      IHME; 6.0 IELTS cac nganh chat luong cao, E-BBA, E-PMP, Actuary, BFT, E-BDB,
+      ICAEW-CFAB, DSEB, BFI, EMQI, ESOM; DAT 5.5 IELTS doi voi cac nganh con lai.
+      Ngoai ra sinh vien can dat chuan dau ra tin hoc theo chuan quoc te nhu chaun
+      IC3 hoac chuan ICDL.'
+  utter_get_hinh_thuc:
+  - text: 'Truong Dai hoc kinh te quoc dan tuyen sinh dai hoc nam 2019 voi 3 hinh
+      thuc xet tuyen: Tuyen thang theo quy dinh cua Bo Giao duc va Dao tao; Xet tuyen
+      theo ket qua thi THPT Quoc gia nam 2019; Xet tuyen ket hop'
+  utter_get_hoc_bong:
+  - text: Nam hoc 2018-2019, quy hoc bong khuyen khich hoc tap cua Truong du kien
+      dat 2.650 suat hoc bong, tong gia tri len toi 25 ty dong. Cac doi tuong duoc
+      xet cap hoc bong la cac sinh vien dat ket qua hoc tap loai kha, gioi, xuat sac.
+  utter_get_hoc_phi:
+  - text: Học phí của Trường ĐH Kinh tế Quốc dân  với các ngành đại học chính quy
+      dao động trong khoảng 16-18 triệu đồng/năm, hằng năm nếu tăng sẽ không quá 10%.
+      Các chương trình đặc thù (học bằng tiếng Anh, tiên tiến, chất lượng cao) có
+      mức học phí cao gấp 2 lần trở lên.
+  utter_get_lien_he:
+  - text: 'Ban co the gui thac mac vao Group tu van tuyen sinh theo duong link sau:
+      https://www.facebook.com/tvtsneu hoac truy cap Website: https://daotao.neu.edu.vn/
+      hoac Hotline: 0888. 128. 558'
+  utter_get_lien_ket_qte:
+  - text: 'Cac chuong trinh lien ket quoc te do Dai hoc nuoc ngoai cap bang bao gom:
+      1. Cu nhan quoc te IBD@NEU: Quan tri kinh doanh, Quan tri kinh doanh quoc te;
+      Quan tri su kien; Ngan hang tai chinh voi Dai hoc Sunderland & Dai hoc West
+      of England, Anh quoc, Website: http://isme.neu.edu.vn/ . 2. Cu nhan Ke toan
+      tai chinh (BIFA) voi Dai hoc Cardiff Metropolitan, Anh quoc, Website: http://saa.neu.edu.vn/
+      . 3. Cu nhan quan tri kinh doanh lien ket 2+2 voi Dai hoc Dongseo, Han Quoc,
+      Website: http://khoaquantrikinhdoanh.neu.edu.vn/ . 4. Cu nhan Quan tri kinh
+      doanh lien ket 2+2 voi Dai hoc California San Bernardino, Hoa ky, Page: https://www.facebook.com/ABD2plus2
+      . 5. Lien thong cu nhan, thac si Dinh phi bao hiem va Quan tri rui ro (Actuary)
+      voi Dai hoc Lyon 1, Phap, Website: http://mfe.neu.edu.vn/ . 6. Cu nhan Cong
+      nghe tai chinh (Fithech) lien ket 2+2 voi Dai hoc A Chau, Dai Loan, Website:
+      http://fintech.neu.edu.vn/ . 7. Cu nhan kinh te hoc va Tai chinh lien ket 1+2
+      voi Dai hoc Lincoln, Anh quoc, Website: http://economics.neu.edu.vn/ .'
+  utter_get_luu_hs:
+  - text: 'Nha truong dao tao luu hoc sinh nuoc ngoai tu nam 1975, bao gom cac quoc
+      gia: Lao, Campuchia, Mong Co, Han Quoc, Trung Quoc, ... Nha truong dao tao Luu
+      hoc sinh bac dai hoc, thac si, tien si o nhieu nganh va co hang tram luu hoc
+      sinh dang theo hoc.'
+  utter_get_mo_ta:
+  - text: Ban muon biet thong tin ve chuyen nganh nao?
+  utter_get_song_song:
+  - text: 'La sinh vien truong Kinh te Quoc dan ban co the lua chon: Dang ky them
+      01 nganh khac de duoc cap 02 bang dai hoc hoac dang ky them mot so hoc phan
+      de co them kien thuc chuyen sau ve linh vuc ma minh yeu thich va duoc cap giay
+      chung nhan khi hoan thanh cac hoc phan.'
+  utter_get_thanks:
+  - text: Cam on ban, chuc ban co mot ky thi thanh cong va tro thanh sinh vien Truong
+      Dai hoc Kinh te Quoc Dan.
+  utter_get_tuyen_thang:
+  - text: 'Hinh thuc xet tuyen ket hop nop ho so tai truong tu 02/09/2019 den 15/07/2019
+      gom 02 doi tuong sau day: - Doi tuong 01: Thi sinh tham gia vong thi tuan cua
+      cuoc thi Duong len dinh Olympia tren Dai truyen hinh Viet Nam co tong so diem
+      thi THPT Quoc gia nam 2019 cua 3 mon bat ky (co mon Toan) dat tu 18 diem tro
+      len (gom ca diem uu tien). Doi tuong 02: Thi sinh co chung chi Tieng Anh quoc
+      te trong thoi han (tinh den ngay 22/06/2019) dat IELTS 6.5 tro len hoac TOEFLITP
+      550 tro len hoac TOEFL iBT 90 tro len va co tong so diem thi THPT Quoc gia nam
+      2019 cua 3 mon bat ky (co mon Tieng Anh) dat tu 14 diem tro len (gom ca diem
+      uu tien)'
+  utter_get_ty_le:
+  - text: 'Ty le sinh vien ra truong co viec lam cua Truong Dai hoc Kinh te Quoc dan
+      la: 95.82%'
+  utter_greet:
+  - text: Xin chao! Chung toi co the giup gi duoc cho ban.
